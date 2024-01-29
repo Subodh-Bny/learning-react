@@ -1,14 +1,15 @@
 import { useState } from "react";
+import Login from "./components/Login";
 
 import "./App.css";
 import UserContextProvider from "./context/UserContextProvider";
+import Profile from "./components/Profile";
 
 function App() {
   return (
     <UserContextProvider>
-      <div>
-        <h1>React Context API</h1>
-      </div>
+      <Login />
+      <Profile />
     </UserContextProvider>
   );
 }
